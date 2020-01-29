@@ -5,7 +5,7 @@ pipeline {
 			steps {
 				withAWS(
 					region:'eu-west-1',
-					credentials:'AKIA5XD7YZOQHMFB7HJO'
+					credentials:'aws-static'
 					)
 				s3Upload(file:'index.html', bucket:'adri-jenkins-static', path:'./index.html')
 			}
